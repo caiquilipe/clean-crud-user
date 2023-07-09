@@ -3,7 +3,7 @@ from domains.user import UserModel
 from typing import List
 
 
-class UserRepository(ABC):
+class UserRepositoryInterface(ABC):
     @abstractmethod
     def get_user(self, user_id: int) -> UserModel:
         raise NotImplementedError("Get user not implemented")
